@@ -19,5 +19,6 @@ sc_y = StandardScaler()
 X = sc_X.fit_transform(X)
 y = sc_y.fit_transform(y)
 
-#%%training the SVR model on the whole dataset
+# %%training the SVR model on the whole dataset
 regressor = SVR(kernel='rbf')
+regressor.fit(X, y)
